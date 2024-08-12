@@ -1,0 +1,2 @@
+//show all the database in te mongodb
+show dbs;

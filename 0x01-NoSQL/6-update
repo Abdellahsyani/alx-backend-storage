@@ -1,2 +1,2 @@
 //update the document with new value
-db.school.insert({address: "972 Mission street"});
+db.school.insertOne({address: "972 Mission street"});

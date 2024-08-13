@@ -1,4 +1,5 @@
 //insert a document
+mongo <my_db>
 db.school.insertOne({
 	name: "Holberton school"
 })

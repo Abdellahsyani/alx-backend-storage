@@ -1,2 +1,2 @@
 //lists all the document in ('school')
-db.school.find.pretty();
+db.school.find().forEach(printjson);

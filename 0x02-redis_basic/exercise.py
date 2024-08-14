@@ -9,7 +9,7 @@ class Cache:
     '''Start caching with Redis'''
     def __init__(self):
         '''The init method'''
-        self._redis = redis.Redis(host='localhost', port=6379, db=0)
+        self._redis = redis.Redis()
         self._redis.flushdb(True)
 
     def store(self, data: Union[str, int, bytes, float]) -> Union[str, None, None, None]:

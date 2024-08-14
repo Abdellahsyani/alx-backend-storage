@@ -12,7 +12,7 @@ class Cache:
         '''The init method'''
 
         self._redis = redis.Redis()
-        self._redis.flushdb()
+        self._redis.flushdb(True)
 
     def store(self, data: Union[str, int, bytes, float]) -> str:
         '''Store method to return the key value as a string'''
